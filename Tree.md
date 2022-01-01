@@ -1,6 +1,6 @@
 # RGB Christmas Tree
 
-The [RGB Christmas Tree](https://thepihut.com/products/rainbow-led-christmas-tree-for-micro-bit) contains six LEDs which can change colour - these are something called "neopixels" it would seem. The six lights are connected through one GPIO connector and are called "individually addressable" - so you can control them individually. and set each of them to be a different colour or brightness.
+The [RGB Christmas Tree](https://thepihut.com/products/rainbow-led-christmas-tree-for-micro-bit) contains six LEDs which can change colour - these are something called "neopixels" it would seem. The six lights are connected through one GPIO connector and are called "individually addressable" - so you can control them individually, and set each of them to be a different colour or brightness.
 
 ## Basic Connections
 
