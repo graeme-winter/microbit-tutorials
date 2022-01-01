@@ -1,16 +1,16 @@
-# Simple BBC microbit tutorials
+# Simple BBC micro:bit tutorials
 
 Some introductory material on getting to know the BBC micro bit and
 how to control external things from Python.
 
-# The microbit connectors
+# The micro:bit connectors
 
-The microbit has a lot of little connectors along the bottom edge -
+The micro:bit has a lot of little connectors along the bottom edge -
 some of these are big for crocodile clips and others are much smaller,
-so you can push the microbit into a connector on another circuit
+so you can push the micro:bit into a connector on another circuit
 board:
 
-![microbit pinout](./images/pinout.png)
+![micro:bit pinout](./images/pinout.png)
 
 For this introduction we will focus on using the pinouts 0, 1
 and 2. You can use the 3V pinout to check that things work or supply
@@ -18,7 +18,7 @@ power to something which has internal circuitry.
 
 # Simplest task: power an LED
 
-To do this we will not even use the microbit for anything more than
+To do this we will not even use the micro:bit for anything more than
 passing power to an LED on a board, e.g. one like
 [this](https://thepihut.com/collections/micro-bit-accessories/products/play-board-extras). If
 you connect the (+) end of the board to the 3V connector with
@@ -27,7 +27,7 @@ light up.
 
 # Controlling the LED
 
-Lighting up the LED with the microbit is not interesting. More
+Lighting up the LED with the micro:bit is not interesting. More
 interesting is to control it from Python! So what you need to do is
 move the (+) crocodile clip from the 3V connector to the 0 one: this
 is something called a general purpose input / output (or GPIO) which
