@@ -23,7 +23,6 @@ np = neopixel.NeoPixel(microbit.pin0, 6)
 
 This says that you have six LEDs connected to 0. You can control the brightness and colour by setting how bright the red, green and blue channels are - white light would be made up of them being the same. The brightness is in a range from 0 (off) to 255 (maximum brightness) so if you do:
 
-```
 ```python
 import neopixel
 import microbit
@@ -33,7 +32,8 @@ np = neopixel.NeoPixel(microbit.pin0, 6)
 for j in range(10):
     for b in range(255):
         np[0] = (b, b, b)
-        time.sleep(0.01)
+    np.show()
+    time.sleep(0.01)
 ```
 
 should make the bottom LED pulse from dim to bright white 10 times. If
@@ -75,7 +75,8 @@ np = neopixel.NeoPixel(machine.pin0, 6)
 for j in range(1000):
     for l in range(6):
         np[l] = random.choice(colours)
-	time.sleep(0.1)
+    np.show()
+    time.sleep(0.1)
 ```
 
-This should twinkle for a couple of minutes.... 
+This should twinkle for a couple of minutes... you may want to set the colours by hand to see that I have the codes right too!
