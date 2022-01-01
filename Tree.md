@@ -31,9 +31,53 @@ import time
 
 np = neopixel.NeoPixel(microbit.pin0, 6)
 for j in range(10):
-    for b in range(255)
-    np[0] = (b, b, b)
-    time.sleep(0.01)
+    for b in range(255):
+        np[0] = (b, b, b)
+        time.sleep(0.01)
 ```
 
-should make the bottom LED pulse from dim to bright 10 times. 
+should make the bottom LED pulse from dim to bright white 10 times. If
+you want to make another LED light up, change `[0]` to `[1]` to
+`[5]`. 
+
+## Blinking
+
+If you want to change the colour of the LED from white, make the three
+numbers _different_ e.g. if you set just the first number to `b` above
+then the others to zero like:
+
+```Python
+np[0] = (b, 0, 0)
+```
+
+then the light will stay red, and become brighter and dimmer. Let's
+make _all_ the lights twinkle different colours...
+
+```python
+import neopixel
+import microbit
+import random
+import time
+
+black = (0, 0, 0)
+red = (255, 0, 0)
+green = (0, 255, 0)
+blue = (0, 0, 255)
+yellow = (255, 255, 0)
+cyan = (0, 255, 255)
+magenta = (255, 0, 255)
+white = (255, 255, 255)
+
+colours = (black, red, green, blue, yellow, cyan, magenta, white)
+
+np = neopixel.NeoPixel(machine.pin0, 6)
+
+for j in range(1000):
+    for l in range(6):
+        np[l] = random.choice(colours)
+	time.sleep(0.1)
+```
+
+This should twinkle for a couple of minutes.... 
+while True:
+    

@@ -69,3 +69,7 @@ for j in range(60):
     microbit.pin0.write_digital(0)
     time.sleep(1)
 ```
+
+## More advanced things...
+
+[Christmas tree controlling](./Tree.md)
