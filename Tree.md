@@ -79,5 +79,3 @@ for j in range(1000):
 ```
 
 This should twinkle for a couple of minutes.... 
-while True:
-    
